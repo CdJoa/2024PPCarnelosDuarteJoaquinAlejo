@@ -96,7 +96,6 @@ function manejarCambioFiltro() {
     crearChecklist(parametrosJson[filtro]);
     crearTabla(filtro, parametrosJson[filtro]);
 }
-
 function crearChecklist(parametros) {
     const contenedorChecklist = document.getElementById('checklist-container');
     const divRow = document.createElement('div');
@@ -114,11 +113,11 @@ function crearChecklist(parametros) {
             const columnas = document.querySelectorAll(`[data-param="${param}"]`);
             columnas.forEach(celda => {
                 celda.style.display = this.checked ? '' : 'none';
-            });
 
-            const indiceColumna = Array.from(celda.parentNode.children).indexOf(celda);
-            const encabezado = document.querySelector(`th:nth-child(${indiceColumna + 1})`);
-            encabezado.style.display = this.checked ? '' : 'none';
+                const indiceColumna = Array.from(celda.parentNode.children).indexOf(celda);
+                const encabezado = document.querySelector(`th:nth-child(${indiceColumna + 1})`);
+                encabezado.style.display = this.checked ? '' : 'none';
+            });
         });
     });
     contenedorChecklist.appendChild(divRow);
