@@ -1,0 +1,45 @@
+.checklist-row {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.checklist-item {
+    margin-right: 10px;
+    display: inline-block;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+th, td {
+    border: 1px solid black;
+    padding: 8px;
+    text-align: left;
+}
+
+#form-datos {
+    display: block;
+    background-color: rgb(101, 228, 133);
+
+}
+
+#form-datos table {
+    background-color: #e0f7fa; /* Color celeste claro */
+}
+
+#form-abm {
+    display: none;
+    background-color: rgb(226, 214, 43);
+}
+
+#form-abm div {
+        display: block;
+        margin-bottom: 10px;
+        
+    }
+
+h2 {
+    text-align: center;
+}

@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./estilo.css">
+
+</head>
+<body>
+
+    <form action="" method="post" id="form-datos">
+        <h2>Form datos</h2>
+
+        <div class="form-group">
+            <label for="filtro">Filtrar por:</label>
+            <select id="filtro" name="filtro">
+                <option value="0">Todos</option>
+                <option value="1">Aereo</option>
+                <option value="2">Terrestre</option>
+            </select>
+        </div>
+        <div class="form-group">
+            <label for="velocidad-max">Calcular velocidad Maxima Promedio:</label>
+            <input type="text" id="velocidad-maxima" readonly>
+            <button type="button" onclick="calcularPromedio()">Calcular</button>
+
+        </div>
+        <div id="checklist-container"></div>
+        <div id="tabla-container"></div>
+        <button type="button" onclick="agregarElemento()">Agregar</button>
+    </form>
+
+    <form action="" method="post" id="form-abm">
+        <h2>Form ABM</h2>
+    
+        <div class="form-group">
+            <label for="id">ID:</label>
+            <input type="number" id="id1" name="id" readonly>
+        </div>
+    
+        <div class="form-group">
+            <label for="modelo">Modelo:</label>
+            <input type="text" id="ModeloDistinto" name="modelo">
+        </div>
+        <div class="form-group">
+            <label for="anoFab">Año:</label>
+            <input type="number" id="anoFabrica" name="anoFab">
+        </div>
+        <div class="form-group">
+            <label for="velMax">Velocidad Máxima:</label>
+            <input type="number" id="velocidadMaxima" name="velMax">
+        </div>
+    
+        <select id="filtroAbm">
+            <option value="0">Seleccione</option>
+            <option value="1">Aéreo</option>
+            <option value="2">Terrestre</option>
+        </select>
+        <div id="extra-fields-abm"></div>
+        <button type="button" onclick="cancelar()">Cancelar</button>
+        <button type="button" onclick="eliminar()">Eliminar</button>
+    </form>
+    
+
+
+
+    <script src="funciones.js"></script>
+</body>
+</html>
